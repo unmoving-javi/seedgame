@@ -38,10 +38,10 @@ public class basicGrowth : MonoBehaviour
     {
         
         if (!(currentGrowSeconds >= timeToGrow)) {
-            float scale = 0.00001f
+            float scale = 0.00001f;
             currentGrowSeconds += Time.deltaTime;
-            if !(currentGrowSeconds < delayToGrow){
-                scale = Mathf.Lerp(0.001f, scaleWhenGrown, currentGrowSeconds+delayToGrow/timeToGrow+delayToGrow);
+            if (!(currentGrowSeconds < delayToGrow)){
+                scale = Mathf.Lerp(0.001f, scaleWhenGrown, (currentGrowSeconds+delayToGrow)/(timeToGrow+delayToGrow));
             }
 
 
