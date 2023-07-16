@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class basicGrowth : MonoBehaviour
 {
-    float currentGrowSeconds = 0;
+    float currentGrowSeconds = 0f;
 
-    public float timeToGrow = 10;
+    // delay in seconds until growth begins
+    public float delayToGrow = 0f;
+
+    //seconds it takes to grow fully
+    public float timeToGrow = 10f;
+
+    //multiplier to final scale when completely grown
     public float scaleWhenGrown = 1f;
 
+    // for internal use
     Transform thisTrans = null;
     Vector3 initialScale = new Vector3(1,1,1);
 
+    //if true, the child object of this plant will become a physics object when grown
     public bool physWhenGrown = false;
+
+    // for internal use
     bool grown = false;
 
 
@@ -27,11 +37,12 @@ public class basicGrowth : MonoBehaviour
     void Update()
     {
         
-        if (!(currentGrowSeconds >= timeToGrow
-)) {
+        if (!(currentGrowSeconds >= timeToGrow)) {
+            float scale = 0.00001f
             currentGrowSeconds += Time.deltaTime;
-            float scale = Mathf.Lerp(0.001f, scaleWhenGrown, currentGrowSeconds/timeToGrow
-    );
+            if !(currentGrowSeconds < delayToGrow){
+                scale = Mathf.Lerp(0.001f, scaleWhenGrown, currentGrowSeconds+delayToGrow/timeToGrow+delayToGrow);
+            }
 
 
             thisTrans.localScale = new Vector3(scale*initialScale.x, scale*initialScale.y, scale*initialScale.z);
