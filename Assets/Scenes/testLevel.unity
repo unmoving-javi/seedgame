@@ -340,29 +340,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &762832021 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8870413312572767549, guid: 5f728424701588643b3afef9908fc6cb, type: 3}
-  m_PrefabInstance: {fileID: 8870413313058298280}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &762832024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 762832021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c22df84eb4b24d498130647bd943a81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Notes: 'Pivot point is where the plant will grow from.
-
-    Upon full growth, if
-    the plant has physWhenGrown checked, it will become a physics object.'
 --- !u!1 &829407859
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,71 +692,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1128535277
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8870413312572767549, guid: 5f728424701588643b3afef9908fc6cb, type: 3}
-      propertyPath: m_Name
-      value: genericPlantMain (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870413312572767549, guid: 5f728424701588643b3afef9908fc6cb, type: 3}
-      propertyPath: m_TagString
-      value: Plant
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870413312572767550, guid: 5f728424701588643b3afef9908fc6cb, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870413312572767550, guid: 5f728424701588643b3afef9908fc6cb, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5360938
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870413312572767550, guid: 5f728424701588643b3afef9908fc6cb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.2542367
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870413312572767550, guid: 5f728424701588643b3afef9908fc6cb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.99
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870413312572767550, guid: 5f728424701588643b3afef9908fc6cb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870413312572767550, guid: 5f728424701588643b3afef9908fc6cb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870413312572767550, guid: 5f728424701588643b3afef9908fc6cb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870413312572767550, guid: 5f728424701588643b3afef9908fc6cb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870413312572767550, guid: 5f728424701588643b3afef9908fc6cb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870413312572767550, guid: 5f728424701588643b3afef9908fc6cb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870413312572767550, guid: 5f728424701588643b3afef9908fc6cb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870413312572767550, guid: 5f728424701588643b3afef9908fc6cb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5f728424701588643b3afef9908fc6cb, type: 3}
 --- !u!1 &1944560047
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,7 +825,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &8870413313058298280
+--- !u!1001 &2106495674
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -922,21 +836,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: genericPlantMain
       objectReference: {fileID: 0}
-    - target: {fileID: 8870413312572767549, guid: 5f728424701588643b3afef9908fc6cb, type: 3}
-      propertyPath: m_TagString
-      value: Plant
-      objectReference: {fileID: 0}
     - target: {fileID: 8870413312572767550, guid: 5f728424701588643b3afef9908fc6cb, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8870413312572767550, guid: 5f728424701588643b3afef9908fc6cb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.85
+      value: -1.5306168
       objectReference: {fileID: 0}
     - target: {fileID: 8870413312572767550, guid: 5f728424701588643b3afef9908fc6cb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.99
+      value: -3.0024993
       objectReference: {fileID: 0}
     - target: {fileID: 8870413312572767550, guid: 5f728424701588643b3afef9908fc6cb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -968,10 +878,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8870413312572767550, guid: 5f728424701588643b3afef9908fc6cb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870413312572767551, guid: 5f728424701588643b3afef9908fc6cb, type: 3}
-      propertyPath: physWhenGrown
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
